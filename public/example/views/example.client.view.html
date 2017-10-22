@@ -1,0 +1,49 @@
+<section ng-controller="ExampleController">
+<div data-ng-show="!authentication.user">
+<a href="/signup">Signup</a>
+<a href="/signin">Signin</a><br><br>
+
+Add from...<br /><br />
+<a class="cloudsponge-launch button button2" data-cloudsponge-source="yahoo">Yahoo</a><br />
+<a class="cloudsponge-launch button button3" data-cloudsponge-source="windowslive">Windows Live</a><br />
+<a class="cloudsponge-launch button button4" data-cloudsponge-source="gmail">Gmail</a><br />
+<a class="cloudsponge-launch button button5" data-cloudsponge-source="aol">Aol</a><br />
+<a class="cloudsponge-launch button" data-cloudsponge-source="linkedin">LinkedIn</a><br />
+
+<textarea class="cloudsponge-contacts"></textarea>
+<!--
+	<a class="cloudsponge-launch" data-cloudsponge-source="gmail">Gmail</a>
+	<input type="textarea" class="cloudsponge-contacts"/>
+	<textarea class="cloudsponge-contacts"></textarea>-->
+
+</div>
+<div data-ng-show="authentication.user">
+<h1>Hello <span data-ng-bind="authentication.user.fullName"></
+span></h1>
+<a href="/signout">Signout</a>
+<ul>
+<li><a href="/#!/articles">List Articles</a></li>
+<li><a href="/#!/articles/create">Create Article</a></li>
+</ul>
+</div>
+</section>
+
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: orange;} /* Orange */
+.button5 {background-color: violet;} /* Gray */
+</style>
