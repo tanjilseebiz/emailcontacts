@@ -1,3 +1,4 @@
+//angular.module('example').config(['$routeProvider',
 angular.module('example').config(['$routeProvider',
 function($routeProvider) {
   $routeProvider.

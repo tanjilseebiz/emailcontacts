@@ -5,14 +5,18 @@
 
 </head>
 <body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <section ng-view></section>
 <script type="text/javascript">
 window.user = <%- user || 'null' %>;
 </script>
-<script src="//api.cloudsponge.com/widget/9526d2fe51ecc1bf906457fe9858d6d7bd4e3a62.js"></script>
 <script type="text/javascript" src="/lib/angular/angular.js"></script>
 <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
 <script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
+
+<script type="text/javascript" src="/CloudSponge/cloudSpongeModule.js"></script>
+<script type="text/javascript" src="/CloudSponge/cloudSponge.js"></script>
+
 <script type="text/javascript" src="/articles/articles.client.module.js"></script>
 <script type="text/javascript" src="/articles/controllers/articles.client.controller.js"></script>
 <script type="text/javascript" src="/articles/services/articles.client.service.js"></script>

@@ -23,6 +23,7 @@ var getErrorMessage = function(err) {
   }
   });
   };
+
 exports.list = function(req, res) {
 Article.find().sort('-created').populate('creator', 'firstName lastName fullName').exec(function(err, articles) {
 if (err) {

@@ -16,10 +16,10 @@ content: {
   default: '',
   trim: true
   },
-  creator: {
+creator: {
   type: Schema.ObjectId,
   ref: 'User'
   }
   });
-  
+
   mongoose.model('Article', ArticleSchema);
